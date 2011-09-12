@@ -11,8 +11,17 @@ The functions accept matrices as two dimentional arrays. A matrix is represented
 examples
 
 ```javascript
-  M = [[1,2],[3,4]];
-  
-  //tranpose
-  transposeMatrix(M); // return [[1,3],[2,4]]
+M = [[1,2],[3,4]];
+
+//transpose
+T = transposeMatrix(M); //returns [[1,3],[2,4]]
+
+//inverse
+inverseMatrix(M); // return [[-2,-1],[-1.5,-0.5]]
+
+
+//determinant
+determinant(M) //returns -2
+
+
 ```
