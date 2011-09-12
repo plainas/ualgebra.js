@@ -9,9 +9,9 @@ Usage
 The functions accept matrices as two dimentional arrays. A matrix is represented as an array of lines, a line is simply an array.
 
 examples
-  
-  M = [[1,2],[3,4]];
-  
-  //tranpose
-  T = transposeMatrix(M);
-  
+```javascript
+M = [[1,2],[3,4]];
+
+//tranpose
+T = transposeMatrix(M);
+```
