@@ -14,11 +14,5 @@ examples
   M = [[1,2],[3,4]];
   
   //tranpose
-  T = transposeMatrix(M);
-```
-
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+  transposeMatrix(M); // return [[1,3],[2,4]]
 ```
