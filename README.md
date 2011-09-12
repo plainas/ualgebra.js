@@ -10,8 +10,8 @@ The functions accept matrices as two dimentional arrays. A matrix is represented
 
 examples
 ```javascript
-M = [[1,2],[3,4]];
-
-//tranpose
-T = transposeMatrix(M);
+  M = [[1,2],[3,4]];
+  
+  //tranpose
+  T = transposeMatrix(M);
 ```
