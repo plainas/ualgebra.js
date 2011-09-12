@@ -22,7 +22,6 @@
 
 
 
-
 function matrixMultiply(a,b){
 	var btrans = transposeMatrix(b);
 	var result = [];
@@ -178,7 +177,7 @@ function generateMatrix(nlines, ncols, func){
 	for(var i = 0; i < nlines; i++){
 		var row = [];
 		for(var j = 0; j < ncols; j++){
-			row.push(func());
+			row.push(func(i,j));
 		}
 		m.push(row);
 	}
@@ -186,16 +185,13 @@ function generateMatrix(nlines, ncols, func){
 }
 
 function zeros(nlines,ncols){
-	return generateMatrix(nlines,ncols, function(){return 0;});
+	return generateMatrix(nlines,ncols, function(i,j){return 0;});
 }
 
 function ones(nlines,ncols){
-	return generateMatrix(nlines,ncols, function(){return 1;});
+	return generateMatrix(nlines,ncols, function(i,j){return 1;});
 }
 
-
-
-/*
-TODOs
-LU, LDU, eigenvalues?, random, identity, printMatrix, export, dotOp
-*/
+function identity(size){
+	return generateMatrix(size, size, function(i,j){ if(i===j) return 1; return 0; });
+}
