@@ -1,8 +1,8 @@
 ualgebra.js is a tiny javascript linear algebra library.
 It contains numerical implementations of basic matric operations.
 
-Keep in mind that this this contains only numerical implementations. There's not type checking of any kind nor suport for rational numbers.
-This is _not_ a symbolic calculos tool either
+Keep in mind that this this contains only numerical implementations. There's no type checking of any kind nor suport for rational numbers.
+This is _not_ a symbolic calculus tool either.
 
 Usage
 =====
