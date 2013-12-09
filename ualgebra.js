@@ -133,7 +133,7 @@ function cofactorMatrix(m){
 	for(var i = 0; i < m.length; i++){
 		var row = [];
 		for(var j = 0; j < m.length; j++){
-			var cofactorval = cofactor(m,i,j);
+			var cofactorval = cofactor(m,i,j)*Math.pow(-1,i+j)
 			row.push(cofactorval);
 		}
 		cofactors.push(row);
